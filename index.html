@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokélist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/scrollbar.css" />
+  </head>
+  <body>
+    
+    <header>
+      <a href="https://www.pokemon.com/br/ " target="_blank">
+        <img
+          src="./src/imagens/pokeball.png"
+          alt="imagem de uma pokebola"
+          class="logo"
+        />
+      </a>
+      <img
+        src="./src/imagens/pokelist.png"
+        alt="Imagem escrito Pokédex"
+        class="logo-poke"
+      />
+      <button id="botao-alterar-tema">
+        <img
+          src="./src/imagens/sun.png"
+          alt="imagem de um sol"
+          class="image-button"
+        />
+      </button>
+    </header>
+
+    <main>
+      <ul class="pokelist">
+        <li class="pokecard">
+          <div class="information">
+            <span>Bulbasour</span>
+            <span>#001</span>
+          </div>
+          <img
+            src="./src/imagens/bulbasaur.gif"
+            alt="gif do bulbasaur"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type grass">Grama</li>
+            <li class="type poison">Veneno</li>
+          </ul>
+          <p class="description">
+            Há uma semente de planta em suas costas desde o dia em que este
+            Pokémon nasceu. A semente cresce lentamente.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Ivysaur</span>
+            <span>#002</span>
+          </div>
+          <img
+            src="./src/imagens/ivysaur.gif"
+            alt="gif do Ivysaur"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type grass">Grama</li>
+            <li class="type poison">Veneno</li>
+          </ul>
+          <p class="description">
+            Quando o bulbo nas costas cresce, parece perder a capacidade de
+            ficar de pé nas patas traseiras.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Venosaur</span>
+            <span>#003</span>
+          </div>
+          <img
+            src="./src/imagens/venusaur.gif"
+            alt="gif do Venusaur"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type grass">Grama</li>
+            <li class="type poison">Veneno</li>
+          </ul>
+          <p class="description">
+            Sua planta floresce quando está absorvendo energia solar. Ele
+            permanece em movimento para buscar a luz do sol.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Charmander</span>
+            <span>#004</span>
+          </div>
+          <img
+            src="./src/imagens/charmander.gif"
+            alt="gif do Charmander"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type fire">Fogo</li>
+          </ul>
+          <p class="description">
+            Tem preferência por coisas quentes. Quando chove, diz-se que o vapor
+            jorra da ponta de sua cauda.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Charmeleon</span>
+            <span>#005</span>
+          </div>
+          <img
+            src="./src/imagens/charmeleon.gif"
+            alt="gif do Charmeleon"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type fire">Fogo</li>
+          </ul>
+          <p class="description">
+            Tem uma natureza bárbara. Em batalha, ele chicoteia sua cauda de
+            fogo e corta com garras afiadas.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Charizard</span>
+            <span>#006</span>
+          </div>
+          <img
+            src="./src/imagens/charizard.gif"
+            alt="gif do Charizard"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type fire">Fogo</li>
+            <li class="type flying">Voador</li>
+          </ul>
+          <p class="description">
+            Ele cospe fogo que é quente o suficiente para derreter pedras. Pode
+            causar incêndios florestais soprando chamas.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Squirtle</span>
+            <span>#007</span>
+          </div>
+          <img
+            src="./src/imagens/squirtle.gif"
+            alt="gif do Squirtle"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type water">Água</li>
+          </ul>
+          <p class="description">
+            Quando retrai seu longo pescoço em sua concha, esguicha água com
+            força vigorosa.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Wartortle</span>
+            <span>#008</span>
+          </div>
+          <img
+            src="./src/imagens/wartortle.gif"
+            alt="gif do Wartortle"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type water">Água</li>
+          </ul>
+          <p class="description">
+            É reconhecido como um símbolo de longevidade. Se sua casca tiver
+            algas, aquele Wartortle é muito velho.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Bastoise</span>
+            <span>#009</span>
+          </div>
+          <img
+            src="./src/imagens/blastoise.gif"
+            alt="gif do Blastoise"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type water">Água</li>
+          </ul>
+          <p class="description">
+            Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em
+            uma pitada, ele se retirará para dentro de sua casca.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Caterpie</span>
+            <span>#010</span>
+          </div>
+          <img
+            src="./src/imagens/caterpie.gif"
+            alt="gif do Caterpie"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type bug">Inseto</li>
+          </ul>
+          <p class="description">
+            Para proteção, ele libera um fedor horrível da antena em sua cabeça
+            para afastar os inimigos.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Metapod</span>
+            <span>#011</span>
+          </div>
+          <img
+            src="./src/imagens/metapod.gif"
+            alt="gif do Metapod"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type bug">Inseto</li>
+          </ul>
+          <p class="description">
+            Está esperando o momento de evoluir. Nesta fase, só pode endurecer,
+            por isso permanece imóvel para evitar o ataque.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Butterfree</span>
+            <span>#012</span>
+          </div>
+          <img
+            src="./src/imagens/butterfree.gif"
+            alt="gif do Butterfree"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type bug">Inseto</li>
+            <li class="type flying">Voador</li>
+          </ul>
+          <p class="description">
+            Em batalha, ele bate as asas em grande velocidade para liberar
+            poeira altamente tóxica no ar.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Pidgey</span>
+            <span>#016</span>
+          </div>
+          <img src="./src/imagens/pidgey.gif" alt="gif do Pidgey" class="gif" />
+          <ul class="types">
+            <li class="type normal">Normal</li>
+            <li class="type flying">Voador</li>
+          </ul>
+          <p class="description">
+            Muito dócil. Se atacado, muitas vezes chuta areia para se proteger,
+            em vez de revidar.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Pidgeotto</span>
+            <span>#017</span>
+          </div>
+          <img
+            src="./src/imagens/pidgeotto.gif"
+            alt="gif do Pidgeotto"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type normal">Normal</li>
+            <li class="type flying">Voador</li>
+          </ul>
+          <p class="description">
+            Este Pokémon está cheio de vitalidade. Ele voa constantemente em
+            torno de seu grande território em busca de presas.
+          </p>
+        </li>
+
+        <li class="pokecard">
+          <div class="information">
+            <span>Pidgeot</span>
+            <span>#018</span>
+          </div>
+          <img
+            src="./src/imagens/pidgeot.gif"
+            alt="gif do Pidgeot"
+            class="gif"
+          />
+          <ul class="types">
+            <li class="type normal">Normal</li>
+            <li class="type flying">Voador</li>
+          </ul>
+          <p class="description">
+            Este Pokémon voa na velocidade de Mach 2, buscando presas. Suas
+            grandes garras são temidas como armas perversas.
+          </p>
+        </li>
+      </ul>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

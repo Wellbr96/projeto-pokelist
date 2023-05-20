@@ -1,0 +1,184 @@
+body {
+  background-image: url(./bg/bg-poke-day.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body.black-mode {
+  background-image: url(./bg/bg-poke-night.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+header .logo,
+.image-button {
+  width: 30px;
+  transition: 0.3s ease-in-out;
+}
+header .logo-poke {
+  width: 100px;
+}
+
+header #botao-alterar-tema {
+  background: none;
+  border: none;
+}
+
+header .logo:hover,
+.image-button:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+main {
+  padding: 25px;
+}
+
+main .pokelist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+main .pokecard {
+  background: rgb(231, 229, 229, 0.5);
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+main .pokecard:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  padding: 10px;
+}
+
+.black-mode .pokecard {
+  background: lightslategray, 0.5;
+}
+
+.black-mode .pokecard:hover {
+  background: rgb(105, 157, 174);
+}
+
+main .pokecard .information {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+main .pokecard .information span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .pokecard .gif {
+  width: 70px;
+  height: 70px;
+}
+
+main .pokecard .types {
+  display: flex;
+  gap: 15px;
+}
+
+main .pokecard .type {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+main .description {
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.grass {
+  background: rgb(1, 104, 1);
+  color: white;
+}
+
+.poison {
+  background: rgb(105, 1, 105);
+  color: white;
+}
+
+.fire {
+  background: rgb(222, 59, 0);
+  color: white;
+}
+
+.flying {
+  background: rgb(197, 196, 196);
+  background: linear-gradient(
+    0deg,
+    rgba(197, 196, 196, 1) 40%,
+    rgba(8, 183, 184, 1) 100%
+  );
+}
+
+.water {
+  background: rgb(55, 55, 197);
+  color: white;
+}
+
+.bug {
+  background: rgb(106, 136, 9);
+  color: white;
+}
+
+.normal {
+  background: rgb(222, 215, 215);
+}
+
+.eletric {
+  background: rgba(255, 255, 0, 0.86);
+}
+
+.psychic {
+  background: rgb(251, 146, 239);
+}
+
+.ice {
+  background: rgb(59, 176, 214);
+}
+
+.dragon {
+  background: rgb(196, 8, 60);
+  background: linear-gradient(
+    0deg,
+    rgba(196, 8, 60, 1) 0%,
+    rgba(8, 183, 184, 1) 90%
+  );
+  color: white;
+}
+
+.dark {
+  background: rgb(74, 74, 74);
+  color: white;
+}
